@@ -1,0 +1,33 @@
+{
+    "name": "express-react-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "./bin/server.js",
+        "dev": "NODE_ENV=development nodemon -- -r dotenv/config --inspect ./bin/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "app-root-path": "^2.0.1",
+        "bunyan": "^1.8.12",
+        "continuation-local-storage": "^3.2.1",
+        "express": "^4.16.2",
+        "express-promise-router": "^3.0.1",
+        "express-session": "^1.15.6",
+        "lodash": "^4.17.5",
+        "nodemon": "^1.17.2",
+        "passport": "^0.4.0",
+        "passport-local": "^1.0.0",
+        "pg": "^7.4.1",
+        "pg-hstore": "^2.3.2",
+        "sequelize": "^4.37.4",
+        "stack-trace": "0.0.10"
+    },
+    "devDependencies": {
+        "dotenv": "^5.0.1"
+    }
+}
