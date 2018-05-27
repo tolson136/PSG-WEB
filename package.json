@@ -7,7 +7,8 @@
         "start": "node ./bin/server.js",
         "dev": "NODE_ENV=development nodemon -- --inspect ./bin/server.js",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "makemigrations": "node ./node_modules/sequelize-auto-migrations/bin/makemigration.js"
+        "makemigrations": "node ./node_modules/sequelize-auto-migrations/bin/makemigration.js -n",
+        "migrate": "sequelize db:migrate"
     },
     "keywords": [],
     "author": "",
