@@ -13,6 +13,6 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(api);
+app.use('/api', api);
 
 module.exports = app;

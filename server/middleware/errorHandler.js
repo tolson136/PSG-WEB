@@ -15,7 +15,7 @@ module.exports = function (err, req, res, next) {
 
             if (isDevelopment) {
                 result.message = err.message;
-                result.stack = err.stack.split('\n');
+                result.stack = err.stack.split('\n').map(_.trim);
             }
 
             if (isHttpError) {

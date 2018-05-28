@@ -5,11 +5,11 @@ const errorHandler = require('./middleware/errorHandler');
 
 router.use(bodyParser.json());
 
-router.use('/api/auth', require('./controllers/auth'));
+router.use('/auth', require('./controllers/auth'));
 
 router.use(authentication());
 
-router.use('/api/session', require('./controllers/session'));
+router.use('/session', require('./controllers/session'));
 
 router.use(errorHandler);
 
