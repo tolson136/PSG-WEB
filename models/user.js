@@ -3,13 +3,16 @@
 module.exports = function (sequelize, DataTypes) {
     const User = sequelize.define('User', {
         email: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
         name: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
         role: {
-            type: DataTypes.ENUM(['admin'])
+            type: DataTypes.ENUM(['admin']),
+            allowNull: false
         }
     });
 
