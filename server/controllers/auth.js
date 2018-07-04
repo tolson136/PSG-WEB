@@ -1,3 +1,4 @@
+'use strict';
 const HttpError = require('http-errors');
 const router = require('express-promise-router')();
 const passport = require('../middleware/passport');
