@@ -27,8 +27,16 @@ router.post('/login', (req, res, next) => {
   })(req, res, next);
 });
 
-router.post('/logout', function (req, res) {
-  // @todo: clear session
+router.post('/logout', async (req, res) => {
+  await new Promise((resolve, reject) => {
+    req.session.destroy(err => {
+      if (err) {
+        reject(err);
+      }
+      resolve();
+    });
+  });
+
   res.json({
     data: {},
     metadata: {}
